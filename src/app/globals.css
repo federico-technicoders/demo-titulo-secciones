@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  /* font-size: 7rem;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue'; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  /* line-height: 5.9rem; */
+}
+h2 {
+  /* font-size: 7rem;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue'; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  /* line-height: 5.9rem; */
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform .5s;
+  
+}
